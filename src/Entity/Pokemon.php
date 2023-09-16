@@ -16,7 +16,7 @@ final class Pokemon
     #[ORM\Column(length: 255)]
     private string $name;
 
-    #[ORM\Column]
+    #[ORM\Column(unique: true)]
     private int $nationalNumber;
 
     #[ORM\Column(length: 255)]
